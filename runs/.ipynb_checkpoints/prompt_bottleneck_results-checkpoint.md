@@ -1,0 +1,11 @@
+| Method | Prompt | Prompt Settings | Trainable Part | Adapter | Adapter Location | Epochs | Trainable Params | Kvasir Dice | Kvasir mIoU | ClinicDB Dice | ClinicDB mIoU | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Adapter | Points | 1 point | Prompt Encoder | Bottleneck | Sparse Prompt Embeddings | 20 | 33K / 39.00M | 0.71 | 0.60 | 0.61 | 0.51 | loss=bce_iou |
+| Adapter | Points | 2 points | Prompt Encoder | Bottleneck | Sparse Prompt Embeddings | 20 | 33K / 39.00M | 0.77 | 0.65 | 0.76 | 0.66 | loss=bce_iou |
+| Adapter | Points | 3 points | Prompt Encoder | Bottleneck | Sparse Prompt Embeddings | 20 | 33K / 39.00M | 0.79 | 0.68 | 0.77 | 0.66 | loss=bce_iou |
+| Adapter | Points | 4 points | Prompt Encoder | Bottleneck | Sparse Prompt Embeddings | 20 | 33K / 39.00M | 0.79 | 0.69 | 0.76 | 0.65 | loss=bce_iou |
+| Adapter | Box | 0% noise | Prompt Encoder | Bottleneck | Sparse Prompt Embeddings | 20 | 33K / 39.00M | 0.90 | 0.83 | 0.88 | 0.81 | loss=bce_iou |
+| Adapter | Box | 10% noise | Prompt Encoder | Bottleneck | Sparse Prompt Embeddings | 20 | 33K / 39.00M | 0.89 | 0.82 | 0.87 | 0.80 | loss=bce_iou |
+| Adapter | Box | 20% noise | Prompt Encoder | Bottleneck | Sparse Prompt Embeddings | 20 | 33K / 39.00M | 0.84 | 0.74 | 0.81 | 0.71 | loss=bce_iou |
+| Adapter | Box | 30% noise | Prompt Encoder | Bottleneck | Sparse Prompt Embeddings | 20 | 33K / 39.00M | 0.82 | 0.71 | 0.72 | 0.60 | loss=bce_iou |
+| Adapter | Box | 40% noise | Prompt Encoder | Bottleneck | Sparse Prompt Embeddings | 20 | 33K / 39.00M | 0.72 | 0.59 | 0.67 | 0.55 | loss=bce_iou |

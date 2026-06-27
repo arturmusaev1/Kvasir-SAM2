@@ -1,0 +1,10 @@
+python3 train.py --experiment zero_shot --epochs 0
+python3 train.py --experiment mask_decoder_full --epochs 20
+python3 train.py --experiment decoder_bottleneck --epochs 20
+python3 train.py --experiment decoder_lora_q --epochs 20
+python3 train.py --experiment decoder_lora_qv --epochs 20
+python3 train.py --experiment decoder_lora_qvout --epochs 20
+python3 train.py --experiment image_neck_conv --epochs 20
+python3 train.py --experiment image_hiera_bottleneck --epochs 20RT
+python3 train.py --experiment prompt_bottleneck --epochs 20
+python3 aggregate.py --runs_dir runs --out final_results

@@ -1,0 +1,10 @@
+Method,Prompt,Prompt Settings,Trainable Part,Adapter,Adapter Location,Epochs,Trainable Params,Kvasir Dice,Kvasir mIoU,ClinicDB Dice,ClinicDB mIoU,Notes
+Zero-shot,Points,1 point,None,-,-,-,0,0.38,0.27,0.25,0.15,loss=bce_iou
+Zero-shot,Points,2 points,None,-,-,-,0,0.44,0.34,0.30,0.19,loss=bce_iou
+Zero-shot,Points,3 points,None,-,-,-,0,0.46,0.35,0.33,0.22,loss=bce_iou
+Zero-shot,Points,4 points,None,-,-,-,0,0.47,0.35,0.30,0.19,loss=bce_iou
+Zero-shot,Box,0% noise,None,-,-,-,0,0.61,0.49,0.61,0.49,loss=bce_iou
+Zero-shot,Box,10% noise,None,-,-,-,0,0.61,0.49,0.60,0.47,loss=bce_iou
+Zero-shot,Box,20% noise,None,-,-,-,0,0.63,0.51,0.60,0.48,loss=bce_iou
+Zero-shot,Box,30% noise,None,-,-,-,0,0.62,0.50,0.55,0.42,loss=bce_iou
+Zero-shot,Box,40% noise,None,-,-,-,0,0.59,0.46,0.45,0.33,loss=bce_iou
