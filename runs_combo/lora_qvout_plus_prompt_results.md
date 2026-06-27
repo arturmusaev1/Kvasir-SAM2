@@ -1,0 +1,11 @@
+| Method | Prompt | Prompt Settings | Trainable Part | Adapter | Adapter Location | Epochs | Trainable Params | Kvasir Dice | Kvasir mIoU | ClinicDB Dice | ClinicDB mIoU | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Adapter | Points | 1 point | Prompt Encoder + Mask Decoder | LoRA + Bottleneck | Attention Q,V,Out + Sparse Prompt Embeddings | 20 | 885K / 39.06M | 0.89 | 0.82 | 0.86 | 0.78 | loss=bce_iou |
+| Adapter | Points | 2 points | Prompt Encoder + Mask Decoder | LoRA + Bottleneck | Attention Q,V,Out + Sparse Prompt Embeddings | 20 | 885K / 39.06M | 0.90 | 0.84 | 0.89 | 0.81 | loss=bce_iou |
+| Adapter | Points | 3 points | Prompt Encoder + Mask Decoder | LoRA + Bottleneck | Attention Q,V,Out + Sparse Prompt Embeddings | 20 | 885K / 39.06M | 0.92 | 0.86 | 0.89 | 0.81 | loss=bce_iou |
+| Adapter | Points | 4 points | Prompt Encoder + Mask Decoder | LoRA + Bottleneck | Attention Q,V,Out + Sparse Prompt Embeddings | 20 | 885K / 39.06M | 0.92 | 0.87 | 0.90 | 0.83 | loss=bce_iou |
+| Adapter | Box | 0% noise | Prompt Encoder + Mask Decoder | LoRA + Bottleneck | Attention Q,V,Out + Sparse Prompt Embeddings | 20 | 885K / 39.06M | 0.92 | 0.87 | 0.90 | 0.83 | loss=bce_iou |
+| Adapter | Box | 10% noise | Prompt Encoder + Mask Decoder | LoRA + Bottleneck | Attention Q,V,Out + Sparse Prompt Embeddings | 20 | 885K / 39.06M | 0.91 | 0.86 | 0.90 | 0.82 | loss=bce_iou |
+| Adapter | Box | 20% noise | Prompt Encoder + Mask Decoder | LoRA + Bottleneck | Attention Q,V,Out + Sparse Prompt Embeddings | 20 | 885K / 39.06M | 0.92 | 0.86 | 0.87 | 0.80 | loss=bce_iou |
+| Adapter | Box | 30% noise | Prompt Encoder + Mask Decoder | LoRA + Bottleneck | Attention Q,V,Out + Sparse Prompt Embeddings | 20 | 885K / 39.06M | 0.92 | 0.86 | 0.89 | 0.82 | loss=bce_iou |
+| Adapter | Box | 40% noise | Prompt Encoder + Mask Decoder | LoRA + Bottleneck | Attention Q,V,Out + Sparse Prompt Embeddings | 20 | 885K / 39.06M | 0.91 | 0.85 | 0.88 | 0.80 | loss=bce_iou |
